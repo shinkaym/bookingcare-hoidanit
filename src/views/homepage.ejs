@@ -9,6 +9,14 @@
 
 <body>
   <h1>Đây là trang chính</h1>
+    <ul>
+      <% users.forEach(function(user) { %>
+        <li>
+          <%= user.firstName %>
+        </li>
+        <% }); %>
+    </ul>
+
 </body>
 
 </html>
