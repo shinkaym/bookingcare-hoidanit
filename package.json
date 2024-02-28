@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js",
+    "beautiful": "prettier --write --tab-width 4 --single-quote --trailing-comma all 'src/**/*.{js,json,scss,css}'"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.23.9",
     "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
     "sequelize-cli": "^6.6.2"
   }
 }
